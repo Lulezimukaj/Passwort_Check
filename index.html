@@ -28,27 +28,28 @@
         </form>
       </section>
       <section>
-        <label for="radio-yes">Passwords are equal</label>
-        <input
-          type="checkbox"
-          name="Passwordsareequal"
-          id="Passwordsareequal"
-        />
-        <br />
-        <label for="radio-no">Lower Case Letters</label>
-        <input type="checkbox" name="Lowercaseletters" id="Lowercaseletters" />
-        <br />
-        <label for="radio-no">Upper Case Letters</label>
-        <input type="checkbox" name="Uppercaseletters" id="Uppercaseletters" />
-        <br />
-        <label for="radio-no">Contains Numbers</label>
-        <input
-          type="checkbox"
-          name="Containsnumbers"
-          id="Containsnumbers"
-        /><br />
-        <label for="radio-no">At least 10 characters long</label>
-        <input type="checkbox" name="Atleast10" id="Atleast10" />
+        <ul class="listdetails">
+          <li class="equal" id="passwordequal">
+            Passwords are equal<span id="equalyes">✅</span
+            ><span id="equalno">❌</span>
+          </li>
+          <li class="Lower" id="lowercase">
+            Lower Case Letters <span class="id">✅</span
+            ><span id="lowerno">❌</span>
+          </li>
+          <li class="Upper" id="uppercase">
+            Upper Case Letters<span id="upperyes">✅</span
+            ><span id="upperno">❌</span>
+          </li>
+          <li id="containsnumbers">
+            Contains Numbers<span id="numbersyes">✅</span
+            ><span id="numbersno">❌</span>
+          </li>
+          <li fid="10characters">
+            At least 10 characters long<span id="10yes">✅</span
+            ><span id="10no">❌</span>
+          </li>
+        </ul>
       </section>
     </article>
 
