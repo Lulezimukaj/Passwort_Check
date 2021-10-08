@@ -17,29 +17,26 @@ function showpassword() {
 
 const pw1 = document.getElementById("inputpw");
 const pw2 = document.getElementById("inputpw2");
+
 pw1.addEventListener("keyup", equalpasswords);
 pw2.addEventListener("keyup", equalpasswords);
-
-pw1.addEventListener("keyup", nopassword);
 
 function equalpasswords() {
   const pw1value = pw1.value;
   const pw2value = pw2.value;
-  console.log("hello");
-  console.log(pw1, pw2);
 
-  if (pw1value !== pw2value) {
+  if (pw1value !== pw2value || pw1value == "") {
     const yes = document.getElementById("equalyes");
     const no = document.getElementById("equalno");
     yes.classList.add("equalno");
     no.classList.remove("equalyes");
+
     return true;
   } else {
     const no = document.getElementById("equalno");
     const yes = document.getElementById("equalyes");
     no.classList.add("equalyes");
     yes.classList.remove("equalno");
-    return true;
   }
 }
 
