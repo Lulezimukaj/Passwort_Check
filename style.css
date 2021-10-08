@@ -1,7 +1,30 @@
 .equalyes {
   display: none;
 }
-
 .equalno {
+  display: none;
+}
+.loweryes {
+  display: none;
+}
+.lowerno {
+  display: none;
+}
+.upperyes {
+  display: none;
+}
+.upperno {
+  display: none;
+}
+.numberyes {
+  display: none;
+}
+.numberno {
+  display: none;
+}
+.tenyes {
+  display: none;
+}
+.tenno {
   display: none;
 }
