@@ -1,30 +1,12 @@
-.equalyes {
-  display: none;
-}
-.equalno {
-  display: none;
-}
-.loweryes {
-  display: none;
-}
-.lowerno {
-  display: none;
-}
-.upperyes {
-  display: none;
-}
-.upperno {
-  display: none;
-}
-.numberyes {
-  display: none;
-}
-.numberno {
-  display: none;
-}
-.tenyes {
-  display: none;
-}
+.equalyes,
+.equalno,
+.loweryes,
+.lowerno,
+.upperyes,
+.upperno,
+.numberyes,
+.numberno,
+.tenyes,
 .tenno {
   display: none;
 }
