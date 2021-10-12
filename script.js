@@ -2,9 +2,18 @@ console.log("Passowort Check");
 
 const button = document.querySelector("#button");
 button.addEventListener("click", showpassword);
-
 const PasswordInput1 = document.getElementById("inputpw");
 const PasswordInput2 = document.getElementById("inputpw2");
+PasswordInput1.addEventListener("keyup", equalpasswords);
+PasswordInput2.addEventListener("keyup", equalpasswords);
+PasswordInput1.addEventListener("keyup", lowercasepassword);
+PasswordInput2.addEventListener("keyup", lowercasepassword);
+PasswordInput1.addEventListener("keyup", uppercasepassword);
+PasswordInput2.addEventListener("keyup", uppercasepassword);
+PasswordInput1.addEventListener("keyup", numberpassword);
+PasswordInput2.addEventListener("keyup", numberpassword);
+PasswordInput1.addEventListener("keyup", characterpassword);
+PasswordInput2.addEventListener("keyup", characterpassword);
 
 function showpassword() {
   if (
@@ -18,9 +27,6 @@ function showpassword() {
     PasswordInput2.type = "password";
   }
 }
-
-PasswordInput1.addEventListener("keyup", equalpasswords);
-PasswordInput2.addEventListener("keyup", equalpasswords);
 
 function equalpasswords() {
   const PasswordInput1value = PasswordInput1.value;
@@ -39,15 +45,6 @@ function equalpasswords() {
     PasswordEqual.classList.remove("equalno");
   }
 }
-
-PasswordInput1.addEventListener("keyup", lowercasepassword);
-PasswordInput2.addEventListener("keyup", lowercasepassword);
-PasswordInput1.addEventListener("keyup", uppercasepassword);
-PasswordInput2.addEventListener("keyup", uppercasepassword);
-PasswordInput1.addEventListener("keyup", numberpassword);
-PasswordInput2.addEventListener("keyup", numberpassword);
-PasswordInput1.addEventListener("keyup", characterpassword);
-PasswordInput2.addEventListener("keyup", characterpassword);
 
 function lowercasepassword() {
   const PasswordInput1value = PasswordInput1.value;
