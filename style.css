@@ -1,0 +1,37 @@
+.equalyes,
+.equalno,
+.loweryes,
+.lowerno,
+.upperyes,
+.upperno,
+.numberyes,
+.numberno,
+.tenyes,
+.tenno {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: salmon;
+}
+
+@media screen and (min-width: 700px) {
+  article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.unordered_list {
+  list-style: none;
+}
